@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Proceed</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="ambient" aria-hidden="true"></div>
+
+  <main class="page-card" role="main">
+    <p class="eyebrow">before we begin</p>
+    <h1>Proceed</h1>
+
+    <img class="tease-image" src="images/cute-hug.jpg" alt="two cats hugging">
+
+    <!-- EDIT: change this line if you want -->
+    <p>There's only one option here. Good luck with that.</p>
+
+    <button type="button" class="dodge-btn" aria-label="No">No</button>
+  </main>
+
+  <!-- popup shown once the button has dodged enough times -->
+  <div class="tease-popup" role="dialog" aria-modal="true" aria-labelledby="tease-title">
+    <div class="popup-card">
+      <h1 id="tease-title" style="font-size:26px;">Ok, you can proceed</h1>
+      <p>you tried so hard.</p>
+      <a class="seal-btn" href="envelope.html">stop teasing me</a>
+    </div>
+  </div>
+
+  <footer class="hint">made with love, one page at a time</footer>
+  <script src="js/script.js"></script>
+</body>
+</html>

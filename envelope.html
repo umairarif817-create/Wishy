@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For You</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="ambient" aria-hidden="true"></div>
+
+  <main class="page-card" role="main">
+    <p class="eyebrow">a little something for</p>
+    <!-- EDIT: change the name below -->
+    <h1>[Their Name]</h1>
+    <p>Before you go any further — this took me a while to put together,<br>and it opens one page at a time, just for you.</p>
+
+    <!-- EDIT: change or remove this little note anytime -->
+    <div class="note-sticker">A little gesture for you, as you know love I treat diseases not websites so I really hope you like it 🩺💛</div>
+
+    <div class="envelope-wrap">
+      <div class="envelope" role="button" tabindex="0" aria-label="Open the envelope">
+        <div class="flap"></div>
+        <div class="body"></div>
+        <div class="heart-seal">♥</div>
+      </div>
+    </div>
+
+    <div class="after-open" style="opacity:0; transition:opacity .5s ease;">
+      <p style="margin-top:6px;">Tap the envelope to open it.</p>
+      <a class="seal-btn" href="chapter1.html">Begin our story</a>
+    </div>
+  </main>
+
+  <footer class="hint">18 chapters, made with love</footer>
+
+  <script src="js/script.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const envelope = document.querySelector('.envelope');
+      const reveal = document.querySelector('.after-open');
+      envelope.addEventListener('click', () => reveal.style.opacity = 1);
+      envelope.addEventListener('keypress', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') envelope.click();
+      });
+    });
+  </script>
+</body>
+</html>
