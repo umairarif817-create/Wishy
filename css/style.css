@@ -282,7 +282,7 @@ audio{ width:100%; margin-top: 10px; accent-color: var(--gold); }
   width:70px; height:22px;
   background: rgba(255,255,255,0.55);
   border: 1px solid rgba(255,255,255,0.7);
-}
+} .preserve-lines{ white-space: pre-line; line-height: 1.9; } .preserve-lines.urdu{ direction: rtl; text-align: right; font-family: var(--font-display); font-style: italic; font-size: 20px; }
 
 /* ---------- runaway "No" button + popup (tease gate) ---------- */
 .tease-image{
